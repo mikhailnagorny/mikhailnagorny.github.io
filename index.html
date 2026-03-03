@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Михаил Нагорный</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #f4f4f4;
+            --card-bg: #ffffff;
+            --text-primary: #111111;
+            --text-secondary: #666666;
+            --accent: #1a1a1a;
+            --border: #e5e5e5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .flashcard {
+            background: var(--card-bg);
+            width: 100%;
+            max-width: 720px;
+            padding: 48px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+        }
+
+        .artist-name {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .tagline {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .video-container {
+            margin-bottom: 32px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        iframe, video {
+            width: 100%;
+            height: 360px;
+            display: block;
+        }
+
+        .event-section {
+            border-top: 1px solid var(--border);
+            padding-top: 24px;
+        }
+
+        .event-title {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .event-detail {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        .label {
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .flashcard {
+                padding: 32px 24px;
+            }
+
+            iframe, video {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="flashcard">
+    <div class="artist-name">Автор-исполнитель, Михаил Нагорный. Семь песен на иностранных языках, два концерта за границей</div>
+    <div class="tagline">Живое выступление • Оригинальная музыка</div>
+
+    <!-- VIDEO SECTION -->
+    <div class="video-container">
+        <!-- Option 1: YouTube Embed -->
+        <iframe 
+            src="video1.mp4" 
+            title="Music Video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+        <iframe 
+            src="video2.mp4" 
+            title="Music Video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+        <iframe 
+            src="video3.mp4" 
+            title="Music Video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+        <iframe 
+            src="video4.mp4" 
+            title="Music Video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+        
+        <iframe 
+            src="video5.mp4" 
+            title="Music Video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+        <iframe 
+            src="video6.mp4" 
+            title="Music Video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+        <iframe 
+            src="video7.mp4" 
+            title="Music Video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+        <!-- Option 2: Local Video File -->
+        <!--
+        <video controls>
+            <source src="your-video-file.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        -->
+    </div>
+
+    <!-- EVENT SECTION -->
+    <div class="event-section">
+        <div class="event-title">Предстоящий концерт</div>
+
+        <div class="event-detail">
+            <span class="label">Дата:</span> 4 апреля, 16:30.
+        </div>
+        <div class="event-detail">
+            <span class="label">Место:</span> Клуб Высоцкого.
+        </div>
+
+        <div class="event-detail">
+            <span class="label">Стоимость:</span> 700 рублей.
+        </div>
+    </div>
+
+    <footer>
+        © 2026 Михаил Нагорный
+    </footer>
+</div>
+
+</body>
+</html>
